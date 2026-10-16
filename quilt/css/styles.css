@@ -1,0 +1,84 @@
+/* 1. Normalize Rule (Required) */
+* { 
+  margin: 0;   
+}
+
+/* 2. Full-Screen Container Rules */
+body, html {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.quilt-container {
+  display: grid;
+  /* 6 columns and 4 rows to accommodate different sizes */
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  width: 100vw;
+  height: 100vh;
+}
+
+/* 3. Base Item Rules */
+.quilt-item {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Grid Spanning for Different Sizes */
+.span-2 {
+  grid-column: span 2;
+}
+
+/* --- Required: At Least Five Unique Div Types (Classes) --- */
+
+/* Class 1: Soft Pink Gradient */
+.pink-gradient-1 {
+  background-image: linear-gradient(135deg, #FFD1DC 0%, #FFF5CC 100%);
+}
+
+/* Class 2: Bold Magenta Solid */
+.pink-solid-1 {
+  background-color: #D61A7C;
+}
+
+/* Class 3: Star Patch (Custom shape styling) */
+.star-patch {
+  background-image: linear-gradient(135deg, #FF69B4 0%, #FF1493 100%);
+  color: #f5f1ab; /* Bright yellow star */
+  font-size: 2.5rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Class 4: Heart Patch (Custom shape styling) */
+.heart-patch {
+  background-image: linear-gradient(135deg, #FFB6C1 0%, #FF69B4 100%);
+  color: #e63c3c; /* Deep red heart contrast */
+  font-size: 2.8rem;
+  opacity: 0.95;
+  text-shadow: 0 2px 4px rgba(255,255,255,0.4);
+}
+
+/* Class 5: Contrasting Purple Solid */
+.purple-solid {
+  background-color: #551A8B;
+}
+
+/* --- Additional Unique Classes for Variety --- */
+.pink-gradient-2 {
+  background-image: linear-gradient(135deg, #D4129F 0%, #D61A7C 100%);
+  opacity: 0.9;
+}
+
+.pink-gradient-3 {
+  background-image: linear-gradient(135deg, #FF99CC 0%, #CC3366 100%);
+}
+
+.pink-solid-2 {
+  background-color: #FFA6C9;
+}
